@@ -1,0 +1,19 @@
+conf:
+  token:
+    expiration: 360000000
+    secret: "A54TPQQ2VQC7KSF2Q2QQ254XQUEADWLAYVY2PKEMG4SGKCBQGJGFA5J57HG65GWG"
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/keepaccounts
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+debug: true
